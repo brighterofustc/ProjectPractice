@@ -1,9 +1,9 @@
 package edu.se.ustc.operation.impl;
 
 import edu.se.ustc.item.BusRouteInfo;
-import edu.se.ustc.operation.StationInfoOperation;
+import edu.se.ustc.operation.RouteInfoOperation;
 
-public class RouteInfoOperationImpl implements StationInfoOperation {
+public class RouteInfoOperationImpl implements RouteInfoOperation {
 
 	@Override
 	public boolean addBusRouteInfo(BusRouteInfo bsi) {
