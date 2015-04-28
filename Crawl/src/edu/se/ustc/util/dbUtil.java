@@ -10,7 +10,7 @@ public class dbUtil {
 	public static Connection getConnect() {
 
 		String url = "jdbc:mysql://localhost:3306/BusInfo?"
-				+ "user=root&password=brighter&useUnicode=true&characterEncoding=UTF8";
+				+ "user=root&password=123&useUnicode=true&characterEncoding=UTF8";
 		Connection conn = null;
 
 		/* load the driver of mySql */

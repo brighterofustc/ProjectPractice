@@ -55,6 +55,7 @@ public class BusRouteInfo {
 	}
 
 	@Override
+	//the string which will be printed each line
 	public String toString() {
 		return "BusRouteInfo [stationName=" + stationName
 				+ ", stationSeries=" + stationSeries + ", busLicence="
@@ -138,6 +139,8 @@ public class BusRouteInfo {
             size++;
         }
         return bsiList;
+        
+        
     }
 
     

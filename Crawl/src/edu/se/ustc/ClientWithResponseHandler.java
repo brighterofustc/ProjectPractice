@@ -86,9 +86,7 @@ public class ClientWithResponseHandler {
 //<moded-by-Pei 2015/04/20  get the string and  split it
 			BusRouteInfo binfo=new BusRouteInfo();
 			List<String> stringList =binfo.getEachStationInfo(str);
-
 			List<BusRouteInfo> bsrList = binfo.getBusRouteInfoList(stringList);
-
 			binfo.printBusRouteInfo(bsrList);
 //>
 		} finally {
