@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class dbUtil {
 
 	public static Connection getConnect() {
-
+//database URL
 		String url = "jdbc:mysql://localhost:3306/BusInfo?"
 				+ "user=root&password=123&useUnicode=true&characterEncoding=UTF8";
 		Connection conn = null;

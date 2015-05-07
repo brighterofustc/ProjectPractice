@@ -40,7 +40,8 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
 import edu.se.ustc.item.BusRouteInfo;
-
+import edu.se.ustc.util.dbUtil;
+import java.sql.*;
 /**
  * This example demonstrates the use of the {@link ResponseHandler} to simplify
  * the process of processing the HTTP response and releasing associated
@@ -83,12 +84,16 @@ public class ClientWithResponseHandler {
 					responseBody.lastIndexOf("table"));
 
 			System.out.println(str);
-//<moded-by-Pei 2015/04/20  get the string and  split it
+			//<moded-by-Pei 2015/04/20  get the string and  split it
 			BusRouteInfo binfo=new BusRouteInfo();
 			List<String> stringList =binfo.getEachStationInfo(str);
 			List<BusRouteInfo> bsrList = binfo.getBusRouteInfoList(stringList);
 			binfo.printBusRouteInfo(bsrList);
-//>
+			//>
+			//select the db
+			dbUtil db = new dbUtil();
+			ResultSet resultSet=null;
+			//resultSet=db.execute(sql);
 		} finally {
 			httpclient.close();
 		}
